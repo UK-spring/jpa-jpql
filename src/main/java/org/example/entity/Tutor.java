@@ -15,6 +15,8 @@ public class Tutor {
 
     private String name;
 
+    private Integer age;
+
     @ManyToOne
     @JoinColumn(insertable = false, updatable = false)
     private Company company;
