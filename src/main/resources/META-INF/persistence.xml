@@ -15,7 +15,7 @@
             <!-- DB 비밀번호 -->
             <property name="jakarta.persistence.jdbc.password" value="1111"/>
             <!-- 스키마 -->
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/entity"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpql"/>
             <!-- 스키마 자동생성 속성 -->
             <property name="hibernate.hbm2ddl.auto" value="create" />
             <!-- Hibernate가 DB에 전송하는 DDL, DML SQL을 콘솔에 출력한다. -->
