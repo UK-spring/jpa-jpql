@@ -25,28 +25,28 @@ public class ProjectionMain {
             em.flush();
             em.clear();
 
-//            List<Tutor> tutorList = em.createQuery("select t from Tutor t", Tutor.class).getResultList();
-//
-//            Tutor wonuk = tutorList.get(0);
-//            wonuk.setName("wonuk2");
-//
-//            // 실제로는 다른 방식을 사용한다. -> 묵시적 JOIN
-//            Company company = em.createQuery("select t.company from Tutor t", Company.class).getSingleResult();
-//
-//            // join을 명시적으로 사용 -> 명시적 JOIN
-//            Company companyV2 = em.createQuery("select t from Tutor t join t.company", Company.class).getSingleResult();
+            List<Tutor> tutorList = em.createQuery("select t from Tutor t", Tutor.class).getResultList();
+
+            Tutor wonuk = tutorList.get(0);
+            wonuk.setName("wonuk2");
+
+            // 실제로는 다른 방식을 사용한다. -> 묵시적 JOIN
+            Company company = em.createQuery("select t.company from Tutor t", Company.class).getSingleResult();
+
+            // join을 명시적으로 사용 -> 명시적 JOIN
+            Company companyV2 = em.createQuery("select t from Tutor t join t.company", Company.class).getSingleResult();
 
             // Embedded
 //            em.createQuery("select t.period from Tutor t", Period.class).getResultList();
 
             // Scala
             // 반환 타입 Object
-            List resultList = em.createQuery("select t.name, t.age from Tutor t").getResultList();
-
-            Object o = resultList.get(0);
-            Object[] result = (Object[]) o;
-            System.out.println("result[0] = " + result[0]);
-            System.out.println("result[1] = " + result[1]);
+//            List resultList = em.createQuery("select t.name, t.age from Tutor t").getResultList();
+//
+//            Object o = resultList.get(0);
+//            Object[] result = (Object[]) o;
+//            System.out.println("result[0] = " + result[0]);
+//            System.out.println("result[1] = " + result[1]);
 
             // 반환 타입 Object[]
 //            List<Object[]> resultList = em.createQuery("select t.name, t.age from Tutor t").getResultList();
