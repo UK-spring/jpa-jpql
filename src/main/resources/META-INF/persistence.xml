@@ -8,6 +8,7 @@
         <class>org.example.entity.Address</class>
         <class>org.example.entity.Language</class>
         <class>org.example.entity.TutorLanguage</class>
+        <class>org.example.entity.Subject</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <!-- DB 아이디 -->
