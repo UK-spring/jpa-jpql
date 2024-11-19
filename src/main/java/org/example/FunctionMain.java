@@ -35,7 +35,7 @@ public class FunctionMain {
             List<String> substringResult = em.createQuery(substringQuery, String.class).getResultList();
             resultList.add(substringResult.get(0));
 
-            Tutor tutor2 = new Tutor("wonuk gap", 101);
+            Tutor tutor2 = new Tutor(" wonukgap ", 101);
             em.persist(tutor2);
 
             String trimQuery = "select trim(t.name) from Tutor t";
