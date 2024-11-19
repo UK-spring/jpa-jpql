@@ -17,6 +17,9 @@ public class Tutor {
 
     private Integer age;
 
+    @Embedded
+    private Period period;
+
     @ManyToOne
     @JoinColumn(insertable = false, updatable = false)
     private Company company;
