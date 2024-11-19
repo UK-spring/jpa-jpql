@@ -32,8 +32,9 @@ public class Tutor {
     public Tutor() {
     }
 
-    public Tutor(String name) {
+    public Tutor(String name, Integer age) {
         this.name = name;
+        this.age = age;
     }
 
     public Long getId() {
@@ -42,5 +43,9 @@ public class Tutor {
 
     public String getName() {
         return name;
+    }
+
+    public Integer getAge() {
+        return age;
     }
 }
