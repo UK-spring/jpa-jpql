@@ -2,6 +2,7 @@ package org.example;
 
 import jakarta.persistence.*;
 import org.example.entity.Company;
+import org.example.entity.Period;
 import org.example.entity.Tutor;
 
 import java.util.List;
